@@ -1,0 +1,41 @@
+{
+  "skill_name": "lilypond-score-editor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我创建一个吉他独奏曲的 LilyPond 模板，包含六线谱和标准五线谱",
+      "expected_output": "生成一个包含标准记谱和可选 tablature 的吉他模板 .ly 文件，使用 \clef treble_8 和 \new TabStaff",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Create a full orchestra score template with woodwinds, brass, and strings sections",
+      "expected_output": "Generate an orchestra.ly template with StaffGroup sections for Woodwinds, Brass, and Strings, including transpositions for clarinet, trumpet, and horn",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I have a string quartet score file score.ly with variables violinI, violinII, viola, cello. Generate a parts manifest from it.",
+      "expected_output": "Auto-detect variables and staves, generate a YAML manifest with correct clefs and instrument names",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Check this LilyPond file for bar duration errors: c4 d e | f2 g | (in 4/4 time with a tuplet section)",
+      "expected_output": "Correctly identify bar duration mismatches, including handling of tuplets like \tuplet 3/2 { c4 d e }",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Compile my_score.ly as a high-resolution PNG at 300 DPI",
+      "expected_output": "Run compile_lilypond.py with --format png --resolution 300 options",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Transpose the clarinet part in my score down a whole step and regenerate the part PDF",
+      "expected_output": "Use \transpose or extract_parts.py transposition field to generate a transposed part",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+source: score.ly
+output_dir: build/parts
+parts:
+  - id: violin-i
+    name: Violin I
+    variable: violinIMusic
+    clef: treble
+    output_name: violin-i
+    midi_instrument: violin
+  - id: violin-ii
+    name: Violin II
+    variable: violinIIMusic
+    clef: treble
+    output_name: violin-ii
+    midi_instrument: violin
+  - id: viola
+    name: Viola
+    variable: violaMusic
+    clef: alto
+    output_name: viola
+    midi_instrument: viola
+  - id: cello
+    name: Cello
+    variable: celloMusic
+    clef: bass
+    output_name: cello
+    midi_instrument: cello
